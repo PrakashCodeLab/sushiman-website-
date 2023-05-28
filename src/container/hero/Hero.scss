@@ -1,0 +1,287 @@
+@import '../../assets/styles/variable/variables.scss';
+
+
+
+@mixin scale($size){
+  transform: scale($size);
+  -webkit-transform: scale($size);
+  -moz-transform: scale($size);
+  -ms-transform: scale($size);
+  -o-transform: scale($size);
+}
+
+
+
+
+.hero__section{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    min-height: calc(100vh - 75px);
+    z-index: 5;
+    
+  
+    @include screen-max(1300px){
+     flex-direction: column;
+     
+    }
+
+}
+
+.hero__section__left{
+    flex: 1.004;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    position: relative;
+    
+    @include screen-max(1300px){
+     flex-grow: 1;
+      
+     }
+   
+     @include screen-max($breakpoint-sm){
+      
+      flex-grow: 1;
+    }
+
+    
+    
+  .hero__img{
+     
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    object-fit: contain;
+
+    @include scale(1);
+    
+  
+
+
+  
+ 
+
+  @include screen-max(1300px){
+    margin: 0;
+    margin-top:3rem ;
+
+}
+        
+    } 
+
+    .hero__heading{
+        position: absolute;
+        bottom:0;
+         width: fit-content;
+        padding: 2rem;
+        font-size: 5rem;
+        line-height: 6.5rem;
+        color: #fff;
+        font-family: $playfair-display;
+        font-weight: 700;
+        @include screen-max($breakpoint-sm){
+          font-size: 2.5rem;
+          line-height: 5rem;
+        }
+    }
+    
+    .hero__sec__overlay{
+    
+        left: 0;
+       position: absolute;
+        z-index: -2;
+        background-color: color(primary-color);
+        inset: 0;
+         width: 100%;
+         height: 100%; 
+       
+    }
+}
+
+
+.hero__section__right {
+    flex: 1;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    flex-direction: column;
+    padding-top: 1rem;
+    z-index: 2;  
+   
+    
+    @include screen-max(1300px){
+      flex-grow: 1;
+      
+     }
+
+     
+
+    @include screen-max($breakpoint-sm){
+     
+      flex-grow: 1;
+    }
+   
+    
+    .hero__sec__content{
+      
+      
+        
+
+       
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+        justify-content: center;
+        align-content: first baseline;
+       padding: 1rem;
+     
+    
+        h2{
+            font-size: 5rem;
+            line-height: 6rem;
+            font-family: $playfair-display;
+            font-weight: 700;
+            text-transform: capitalize;
+             align-self: first baseline;
+             margin-top: 2rem;
+             @include screen-max($breakpoint-sm){
+              font-size: 3rem;
+              line-height: 5rem;
+
+            }
+        }
+       p{
+        font-size:1.3rem;
+        line-height: 2.5rem;
+        font-family: $playfair-display;
+        font-weight: 500;
+        text-transform: capitalize;
+        align-self: first baseline;
+        padding-top: 2.5rem;
+        max-width: 400px;
+        padding-left: 0.5rem;
+        letter-spacing: 0.1rem;
+       }
+
+       .hero__btn__section{
+        align-self: first baseline;
+        display: flex;
+           gap: 1rem; 
+           margin-top: 3rem;
+           @include screen-max($breakpoint-sm){
+                display: flex;
+                flex-direction: column;
+                align-self: first baseline;
+                gap: 2rem;
+                
+                
+          } 
+
+       }
+
+      
+
+    }
+
+  .hero__content__testimonials{
+    margin-top: 2rem;
+    width: 100%;
+     display: flex;
+     gap: 0.5rem;
+     align-items: center;
+     flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    padding: 20px;
+     background-color: color(color-white);
+     @include screen-max($breakpoint-sm){
+      flex-direction: column;   
+      
+        align-items: center;  
+        justify-content: center;
+      
+        }
+
+    .test__hero__one {
+        flex: 2;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+         h4{
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 700;
+            @include screen-max($breakpoint-sm){
+             font-size: 1rem;
+        } 
+
+           span{
+            font-size: 2.5rem;
+            @include screen-max($breakpoint-sm){
+              font-size: 1rem;
+         } 
+            
+
+           }
+         }
+
+         p{
+            font-size: 1.5rem;
+            align-self: flex-end;
+            font-family: $playfair-display;
+            padding-left: 0.4rem;
+            font-weight: 100;
+         }
+
+         
+    }
+
+    .test__hero__two {
+         width: 100%;
+        
+        flex: 1.4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border-left: 0.3px solid color(gray-100);
+        padding-left: 1rem;
+        @include screen-max($breakpoint-sm){
+          border: none; 
+          padding-top: 2rem;
+          
+             
+          
+            }
+
+      img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+
+      }
+
+      p{
+        font-size: 0.8rem;
+        padding-left: 0.8rem;
+        line-height: 1.5rem;
+        @include screen-max($breakpoint-sm){
+           max-width: 200px;  
+          
+             
+          
+            }
+
+      }
+
+
+    }
+  }
+
+
+
+    
+}

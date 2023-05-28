@@ -1,0 +1,10 @@
+@import "../../assets/styles/variable/variables.scss";
+
+.header__logo--overlay{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    inset: 0;
+   z-index: 1;
+    background-color: color(primary-color);
+}

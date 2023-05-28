@@ -1,0 +1,265 @@
+@import "../../assets/styles//variable//variables.scss";
+
+
+
+.service__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  
+
+    .service__sushi__container {
+        width: 100%;
+        display: flex;
+        @include screen-max(800px){
+            flex-direction:column;
+            gap: 3rem;
+          }
+
+        .service__sushie--content {
+            flex: 1;
+           
+            width: 100%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           padding-top: 4rem;
+
+        
+    .services__para {
+        font-size: 1.4rem;
+        color: color(primary-color);
+        padding-bottom: 1rem;
+        align-self: baseline;
+        padding-left: 4rem;
+    }
+    
+    .heading__services {
+        font-size: 3rem;
+        font-family: $playfair-display;
+        font-weight: 700;
+        padding-bottom: 2rem;
+        align-self: baseline;
+        padding-left: 4rem;
+    
+    }
+    
+    .services__text {
+        font-size: 1.6rem;
+        line-height: 3rem;
+        color: color(black-500);
+        padding-bottom: 1.5rem;
+        align-self: baseline;
+        padding-left: 4rem;
+        @include screen-max($breakpoint-sm){
+            font-size: 1rem;
+     
+           }
+    }
+    
+    .services__list {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        max-width: 500px;
+        gap: 2.5rem;
+        align-items: first baseline;
+        justify-content: first baseline;
+        padding-bottom: 3rem;
+        align-self: baseline;
+        padding-left: 4rem;
+      
+    }
+    
+    
+    .service__list__items{
+        display: flex;
+        justify-content:first baseline;
+        gap:1rem;
+        align-items: center;
+        width:150px;
+        
+        padding: 0.4rem;
+    
+    }
+    
+    
+   .icon{
+     @include radius(50%);
+     font-size: 1rem;
+     margin-right: 0.5rem;
+     align-self: center;
+     color:color(primary-color);
+   }
+    
+    span {
+        text-transform: capitalize;
+        font-size: 1.0rem;
+    }    
+          
+
+        }
+
+        .services__suschie--image__container {
+            flex: 1;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           background-image: url(../../assets//images/about_bg1.png);
+           background-repeat: no-repeat;
+           background-position: right center;
+           background-size: cover;
+
+            .sushie__img--services {
+              width: 200px;
+              height: 300px;
+              object-fit: contain;
+              @include screen-max($breakpoint-sm){
+                height: 400px;
+         
+               }
+              
+            }
+
+        }
+
+
+    }
+
+
+    .service__drinks__container {
+        display: flex;
+        @include screen-max(800px){
+            flex-direction:column-reverse;
+            gap: 3rem;
+          }
+
+        .services__drinks--img__container {
+            flex: 1;
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../../assets//images/about_bg2.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: cover;
+          
+
+            .services__img__drinks {
+                width: 200px;
+                height: 300px;
+               object-fit: contain;
+               @include screen-max($breakpoint-sm){
+                height: 400px;
+         
+               }
+            }
+        }
+    }
+
+    .services__drink--content__container {
+        flex: 1;
+        display: flex;
+        padding-top: 4rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     padding-bottom: 3rem;
+       
+      
+        
+    .services__para {
+        font-size: 1.4rem;
+        color: color(primary-color);
+        padding-bottom: 1rem;
+        align-self: baseline;
+        padding-left: 4rem;
+    
+    }
+    
+    .heading__services {
+        font-size: 3rem;
+        font-family: $playfair-display;
+        font-weight: 700;
+        padding-bottom: 2rem;
+        align-self: baseline;
+        padding-left: 4rem;
+    
+    }
+    
+    .services__text {
+        font-size: 1.6rem;
+        line-height: 3rem;
+        color: color(black-500);
+        padding-bottom: 1.5rem;
+        align-self: baseline;
+        padding-left: 4rem;
+        @include screen-max($breakpoint-sm){
+            font-size: 1rem;
+     
+           }
+    }
+    
+    .services__list__drinks{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        max-width: 500px;
+        gap: 2.5rem;
+        align-items: first baseline;
+        justify-content: first baseline;
+        align-self: baseline;
+        padding-left: 4rem;
+      
+    }
+    
+    
+    .services__drinks__items{
+        display: flex;
+        justify-content:first baseline;
+        align-items: center;
+        width:150px;
+        padding: 0.4rem;
+        gap: 1rem;
+    
+    }
+    
+    
+    .icon{
+          margin-right: 0.5rem;
+          align-self: center;
+          font-size: 1.2rem;
+          @include radius(50%);
+          color: color(primary-color);
+    }
+    
+    .service__drink__name{
+        text-transform: capitalize;
+        font-size: 1.05rem;
+    }
+
+
+    }
+
+    
+
+
+
+}
+
+
+
+
+
+
+
+

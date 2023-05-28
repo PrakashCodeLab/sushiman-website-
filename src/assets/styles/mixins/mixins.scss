@@ -1,0 +1,35 @@
+
+
+@mixin radius ($size){
+    border-radius: $size;
+    -webkit-border-radius: $size;
+    -moz-border-radius: $size;
+    -ms-border-radius: $size;
+    -o-border-radius: $size;
+}
+
+@mixin flex-center($direction){
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
+
+
+$breakpoint-sm: 576px;        // Small devices (landscape phones, tablets)
+$breakpoint-md: 768px;        // Medium devices (tablets, laptops)
+$breakpoint-lg: 992px;        // Large devices (laptops, desktops)
+$breakpoint-xl: 1200px;       // Extra large devices (large desktops)
+$breakpoint-xxl: 1400px;  
+
+@mixin screen-max($size){
+    @media  screen  and (max-width: $size){
+        @content;
+    }
+}
+
+@mixin screen-min($size){
+    @media  screen  and (min-width:$size){
+           @content;
+    }
+}

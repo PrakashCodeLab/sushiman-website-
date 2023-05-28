@@ -1,0 +1,161 @@
+@import "../../assets/styles/variable/variables.scss";
+
+
+.header__navbar{
+    display: flex;
+    
+    height: 75px;
+    position: relative;
+    
+    flex-grow: 1;
+
+   
+    .header__logo{
+        flex: 1.035;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        .navbar__heading{
+            color: #fff;
+            padding-left: 20px;
+            z-index: 3;
+            padding-top: 20px;
+            text-transform: uppercase;
+            font-family:$playfair-display;
+            font-weight: 800;
+            letter-spacing: 0.15em;
+            font-size: 1.5rem;
+        }
+
+        .header__logo--overlay{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            inset: 0;
+            z-index: 1;
+            background-color: color(primary-color);
+        }
+       
+    }
+
+    .header__menu{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        gap: 2.5rem;
+    
+        @include screen-max(1300px){
+            display: none;
+        }
+        
+       li{
+           align-self: center;
+          a{
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            letter-spacing: 0.01rem;
+          }
+       }
+    
+    }
+
+
+    .hamburger__section{
+        display: none;
+        color: #fff;  
+        z-index: 99999;
+        
+        @include screen-max(1300px){
+            display: block;
+            position: absolute;
+           
+            right: 4rem;
+            top: 1rem;
+        }
+    }
+    
+    .search__mobile__nav{
+        margin-left: 1rem;
+    }
+
+
+    
+.header__menu__mobile {
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    width: 300px;
+    height:auto;
+    background-color:color(primary-color);
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 4rem;
+    right: 1rem;
+    z-index:9999;
+    list-style: none;
+    margin: 0;
+    padding: 2rem;
+ padding-top: 3rem;
+    background: rgba(198, 73, 73, 0.35);
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+
+    
+.navbar__list{
+      margin-bottom: 10px;
+      align-self: center;
+      padding-bottom: 2.5rem;
+      
+      
+   
+    }
+
+    .mobile__link{
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        cursor: pointer; 
+       
+       
+      }
+
+
+    
+  }
+
+  .hamicon__remove{
+    position: fixed;
+top: 5rem;
+right: 3rem;
+z-index: 100000;
+
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+

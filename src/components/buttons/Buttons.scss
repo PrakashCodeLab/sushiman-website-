@@ -1,0 +1,39 @@
+@import "../../assets//styles/variable/variables.scss";
+
+
+.btn {
+    /* Common button styles */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 220px;
+    padding: 1.5rem;
+    @include radius(2rem);
+    transition: background-color 0.3s ease;
+  
+    &.btn-primary {
+      background-color: #000; /* Primary button background color */
+      color: #fff; /* Text color for better visibility */
+    }
+  
+    &.btn-secondary {
+        background-color: rgba(255, 255, 255, 0.5); /* Button with white transparent background */
+        color: #000;
+         /* Text color for better visibility */
+        
+    }
+  
+    .btn__icon {
+      margin-right: 5px;
+    }
+  
+    .btn__text {
+      display: inline-block;
+    }
+  }
+  
